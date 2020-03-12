@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/igormfa2/public_html/
-    - /bin/cp * $DEPLOYPATH
+    - /usr/bin/rsync -Paz * $DEPLOYPATH --delete
